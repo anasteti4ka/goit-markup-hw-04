@@ -183,7 +183,7 @@ p {
 
 .title {
   background: #2f303a;
-  background-image: radial-gradient(circle at center, #2F303A40, #2F303A40), url(../img/title\ backimg.jpg);
+  background-image: radial-gradient(circle at center, #2F303A40, #2F303A40), url(../img/titlebackimg.jpg);
   background-size: cover;
   width: 1600px;
   height: 600px;
@@ -251,6 +251,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black);
+  padding-top: 30px;
 }
 
 .description {
