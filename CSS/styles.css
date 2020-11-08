@@ -8,6 +8,8 @@
   --whitegrey: #f5f4fa;
   --borders-color: #eeeeee;
   --contacts-footer: rgba(255, 255, 255, 0.6);
+  --icon-color: #AFB1B8;
+  --icon-bg-footer: #ffffff10;
 }
 
 html{
@@ -32,6 +34,11 @@ body {
 h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+button {
+  border-color: var(--whitegrey);
+  border-style: hidden;
 }
 
 ul {
@@ -277,7 +284,6 @@ p {
 
 .figure-studio {
   width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -312,7 +318,6 @@ p {
   color: var(--black);
   background: var(--whitegrey);
   border-radius: 4px; 
-  border-color: var(--whitegrey);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -460,4 +465,157 @@ p {
   color: var(--white);
   padding-top: 10px;
   padding-left: 70px;
+}
+
+.social-icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.footer-icons {
+  fill: var(--white);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 70px;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.social-icons-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--icon-bg-footer);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover{
+background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .social-icon-svg,
+.social-icons-link:focus .social-icon-svg{
+  fill: var(--white);
+}
+
+.social-icons-link-footer:hover{
+background-color: var(--accent-color);
+}
+
+.social-icons-link-footer:hover .footer-icons,
+.social-icons-link-footer:focus .footer-icons{
+  background-color: var(--accent-color);
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.client-svg {
+  fill: var(--icon-color);
+}
+
+.client-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.client-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.client-3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.client-4 {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.client-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.client-6 {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: var(--white);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.client-link:hover{
+  border-color: var(--accent-color);
+}
+
+.client-link:hover .client-svg,
+.client-link:focus .client-svg{
+  fill: var(--accent-color);
+}
+
+.contact-icons-svg1 {
+  width: 16px;
+  height: 12px;
+  fill: var(--grey);
+  margin-right: 10px;
+}
+
+.contact-icons-svg2 {
+  width: 10px;
+  height: 16px;
+  fill: var(--grey);
+  margin-right: 10px;
+}
+
+.mailto:hover .contact-icons-svg1,
+.mailto:focus .contact-icons-svg1 {
+  fill: var(--accent-color);
+}
+.phone:hover .contact-icons-svg2,
+.phone:focus .contact-icons-svg2 {
+  fill: var(--accent-color);
 }
